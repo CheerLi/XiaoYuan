@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="provinces">
+        <item>请选择</item>
+        <item>广东</item>
+        <item>江西</item>
+        <item>湖南</item>
+    </string-array>
+    <string-array name="cities_guangdong">
+        <item>请选择</item>
+        <item>广州</item>
+        <item selected="true">深圳</item>
+    </string-array>
+    <string-array name="schools_shenzhen">
+       	<item>请选择</item>
+        <item selected="true">深圳大学</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.myxiaoapp.android.MainUIActivity" >
+
+    <item
+        android:id="@+id/action_display_male_only"
+        android:orderInCategory="100"
+        android:title="@string/display_male_only"
+        app:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/action_display_female_only"
+        android:orderInCategory="100"
+        android:title="@string/display_female_only"
+        app:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/action_display_all"
+        android:orderInCategory="100"
+        android:title="@string/display_all"
+        app:showAsAction="never"/>
+
+</menu>

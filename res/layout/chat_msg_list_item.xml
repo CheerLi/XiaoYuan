@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/ll_his_chat"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <com.myxiaoapp.view.CircleImageView
+            android:id="@+id/iv_his_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"  />
+
+        <TextView
+            android:id="@+id/tv_his_chat_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/iv_his_portrait"
+            android:background="@drawable/bg_his_chat"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:text="今天去哪里？" />
+
+        <TextView
+            android:id="@+id/tv_his_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_his_chat_msg"
+            android:drawableLeft="@drawable/icon_chat_time"
+            android:text="12:30"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/iv_his_image"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/his_chat_normal"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/test"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_my_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_my_image"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/my_chat_normal"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/test"
+            android:visibility="gone" />
+
+         <com.myxiaoapp.view.CircleImageView
+            android:id="@+id/iv_my_portrait"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp"  />
+
+        <TextView
+            android:id="@+id/tv_my_chat_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_my_portrait"
+            android:background="@drawable/bg_my_chat"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:focusable="true"
+            android:padding="10dp"
+            android:text="哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦"/>
+        
+         <TextView
+            android:id="@+id/tv_my_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/icon_chat_time"
+            android:layout_toLeftOf="@id/tv_my_chat_msg"
+            android:text="12:30"
+            android:visibility="gone" />
+       
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.myxiaoapp.android.PublishImageActivity" >
+<!-- 
+    <item
+        android:id="@+id/action_publish_image"
+        android:title="@string/send"
+        app:showAsAction="always"/>
+ -->
+ 	<item
+ 	    android:id="@+id/action_publish_image" 	    
+        android:title="@string/send"
+ 	    android:icon="@drawable/complete_campus_news"
+ 	    app:showAsAction="always"/>
+</menu>

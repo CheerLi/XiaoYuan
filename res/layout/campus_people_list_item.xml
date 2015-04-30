@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp" >
+
+    <com.myxiaoapp.view.CircleImageView
+        android:id="@+id/portrait"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@null"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/icon_location"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#9E9E9E"
+        android:text="距离1000m" />
+
+    <LinearLayout
+        android:id="@+id/intro_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/distance"
+        android:layout_toRightOf="@id/portrait"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="轻风抚面"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/personal_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="我要飞得更高" />
+    </LinearLayout>
+
+</RelativeLayout>

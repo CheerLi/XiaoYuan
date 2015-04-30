@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 校园圈 -->
+<!-- 
+    <RelativeLayout
+        android:id="@+id/rl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_campus_circle"
+        android:gravity="bottom|left"
+        android:visibility="gone" >
+
+        <com.myxiaoapp.view.CircleImageView
+            android:id="@+id/ci_my_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/show_pic_1" />
+
+        <TextView
+            android:id="@+id/tv_personal_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ci_my_portrait"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/ci_my_portrait"
+            android:text="web designer"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_personal_sign"
+            android:layout_toRightOf="@id/ci_my_portrait"
+            android:text="Mariah"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+ -->
+ <TextView
+     android:id="@+id/new_campus_news_count"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:padding="3dp"
+     android:text="7条新消息"
+     android:background="@color/white"
+     android:textColor="#e23b3b"
+     android:gravity="center"/>
+    <LinearLayout
+        android:id="@+id/ll_common_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_campus_news"
+        android:descendantFocusability="afterDescendants"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.myxiaoapp.view.CircleImageView
+            android:id="@+id/portrait"
+            android:layout_width="@dimen/circle_head_width"
+            android:layout_height="@dimen/circle_head_height"
+         />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="今天21:30"
+                    android:textColor="#666" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_time"
+                    android:singleLine="true"
+                    android:text="XIZI LUO"
+                    android:textColor="#02373f"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="马上到冬天了，非常期待！回想起以前好像有一场说走就走的旅行!"
+                android:textSize="15sp" />
+
+            <com.myxiaoapp.view.MyGridView
+                android:id="@+id/news_photos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="100px"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"                
+                android:verticalSpacing="1dp" 
+                android:stretchMode="columnWidth"  
+                android:numColumns="3"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:orientation="horizontal" >
+				
+                <TextView
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:drawableLeft="@drawable/icon_like"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"/>
+                    
+         <!--        <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/like"
+                    android:layout_marginRight="10dp"
+                    android:text="0" />
+		 -->		
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/like"
+                    android:text="0"
+                    android:drawableLeft="@drawable/icon_comment"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"/>
+        <!--         <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/comment"
+                    android:text="0" />
+          -->       <TextView android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="删除"
+                    android:clickable="true"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

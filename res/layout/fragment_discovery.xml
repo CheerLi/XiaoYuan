@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2" >
+
+    <!-- 我的课表 -->
+
+    <RelativeLayout
+        android:id="@+id/my_class_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_discovery_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/icon_course_table"
+            android:drawablePadding="15dp"
+            android:text="@string/my_class_table"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_discovery_item"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <!-- 校园心情 -->
+
+    <RelativeLayout
+        android:id="@+id/campus_mood_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/my_class_table_layout"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_discovery_item"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/icon_campus_mood"
+            android:drawablePadding="10dp"
+            android:text="@string/campus_mood"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/new_comment_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/new_mood_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_discovery_item"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>

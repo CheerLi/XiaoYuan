@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1eeed" >
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:drawableLeft="@drawable/icon_exit"
+        android:drawablePadding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/exit"
+        android:textColor="@color/exit_text_color"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/tv_exit"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <include
+                android:id="@+id/setting_new_message"
+                layout="@layout/setting_common_layout" />
+
+            <include
+                android:id="@+id/setting_chat_message"
+                layout="@layout/setting_common_layout" />
+
+            <include
+                android:id="@+id/setting_new_focus"
+                layout="@layout/setting_common_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <include
+                android:id="@+id/setting_voice"
+                layout="@layout/setting_common_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <include
+                android:id="@+id/setting_shake"
+                layout="@layout/setting_common_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <include
+                android:id="@+id/setting_news_update"
+                layout="@layout/setting_common_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <include
+                android:id="@+id/setting_phone"
+                layout="@layout/setting_common_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#CCC" />
+
+            <include
+                android:id="@+id/setting_location"
+                layout="@layout/setting_common_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

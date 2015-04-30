@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="1dp" >
+    <com.myxiaoapp.view.MyImageView 
+        android:id="@+id/photo"
+       	android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:src="@drawable/campus_comment1"
+        android:focusable="true"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/del_picture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/del_picture"/>
+</RelativeLayout>

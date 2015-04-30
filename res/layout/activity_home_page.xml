@@ -1,0 +1,299 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/milkwhite"
+        android:orientation="vertical" >
+
+        <!-- 相册 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_theme"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <com.myxiaoapp.view.MyGridView
+                android:id="@+id/gv_photo_album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="80px"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 关注/粉丝 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <!-- 关注 -->
+
+                <LinearLayout
+                    android:id="@+id/tv_focus_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+         			android:background="@drawable/bg_focus"         			
+	               	android:layout_gravity="center"
+	                android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"                        
+                        android:background="@drawable/bg_focus"         			
+	               		android:text="@string/focus" />
+
+                    <TextView
+                        android:id="@+id/foc_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_focus"         			
+	               		android:text="0" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/name_color" />
+
+                <!-- 粉丝 -->
+
+                <LinearLayout
+                    android:id="@+id/tv_fans_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+         			android:background="@drawable/bg_fans"
+         			android:layout_gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_fans"
+                        android:text="@string/fans" />
+
+                    <TextView
+                        android:id="@+id/fan_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_fans"
+                        android:text="0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 昵称 -->
+
+            <RelativeLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="昵称"
+                    android:textColor="#888"
+                    android:textSize="@dimen/textSize_small" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/nickname" />
+            </RelativeLayout>
+            <!-- 下划线 -->
+<!-- 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/milkwhite" />
+           
+ --> 		<!-- 学校 -->
+            <RelativeLayout
+                android:id="@+id/schoolLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/school_label"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="学校"                    
+                    android:textColor="#888"
+                    android:textSize="@dimen/textSize_small" />
+
+                <TextView
+                    android:id="@+id/school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/school_label"
+                    android:text="深圳大学" />
+            </RelativeLayout>
+
+            <!-- 下划线 -->
+<!--  
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/milkwhite" />
+ --> 
+               <!-- 个性签名 -->
+            <LinearLayout
+                android:id="@+id/signLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="个性签名"                    
+                    android:textColor="#888"
+                    android:textSize="@dimen/textSize_small" />
+
+                <TextView
+                    android:id="@+id/person_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/textSize_small" />
+            </LinearLayout>
+
+            <!-- 校园心情 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:text="校园心情"                    
+                    android:textColor="#888"
+                    android:textSize="@dimen/textSize_small" />
+
+                <LinearLayout
+                	android:id="@+id/go_person_campus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:descendantFocusability="afterDescendants"
+                    android:padding="8dp" >
+ 
+                    <TextView
+                        android:id="@+id/campus_mood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text=""
+                        android:visibility="gone" />
+		
+                    <com.myxiaoapp.view.PersonGridView
+                        android:id="@+id/gv_photo_mood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnWidth="100px"
+                        android:gravity="center"
+                        android:horizontalSpacing="1dp"
+                        android:numColumns="5"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 关注和聊天按钮 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/go_focus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_go_focus"
+                    android:text="@string/focus"
+                    android:textColor="#FFF" />
+
+                <Button
+                    android:id="@+id/go_chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_go_chat"
+                    android:text="@string/chat"
+                    android:textColor="#FFF" />
+               
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

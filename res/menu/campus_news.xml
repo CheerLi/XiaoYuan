@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.myxiaoapp.android.CampusNewsActivity" >
+
+    <!-- 当校园圈是自己的时，现在这个item -->
+    <item
+        android:id="@+id/action_information"
+        android:orderInCategory="100"
+        android:title="@string/information"
+        android:icon="@drawable/icon_information"
+        app:showAsAction="ifRoom"/>
+    
+</menu>

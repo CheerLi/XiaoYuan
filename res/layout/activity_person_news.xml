@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_campus_circle"
+        android:orientation="vertical" >
+
+        <com.myxiaoapp.view.CircleImageView
+            android:id="@+id/ci_my_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/show_pic_1" />
+
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="知之为知之，不知为不知，是智慧也"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_news_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:text="今天"
+            android:textSize="@dimen/textSize_large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/milkwhite"
+            android:padding="3dp"
+            android:layout_toRightOf="@id/date" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/show_pic_2" />
+
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:padding="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

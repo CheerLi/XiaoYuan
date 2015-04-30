@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:padding="5dp">
+    <TextView 
+        android:id="@+id/comment_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_people"
+        android:text="@string/comment_people"
+        android:textSize="@dimen/textSize_small"/>
+    <TextView 
+        android:id="@+id/split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/split"
+        android:textSize="@dimen/textSize_small"/>
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment"
+        android:textSize="@dimen/textSize_small"/>
+</LinearLayout>

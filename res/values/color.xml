@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="detail_item_title_color">#A3A3A3</color>
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="eee">#EEEEEE</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="black">#000</color>
+    <color name="go_chat_normal">#6d8fe6</color>	
+    <color name="go_chat_press">#6281cf</color>
+    <color name="go_focus_normal">#4e4c60</color>
+    <color name="go_focus_press">#484659</color>
+    <color name="exit_text_normal_color">#e23b3b</color>
+    <color name="exit_text_press_color">#d53030</color>
+    <color name="title_press">#181a2e</color>
+	<color name="register_press">#2a3c50</color>
+    <color name="register_normal">#39526f</color>
+    <color name="login_press">#8abb02</color>
+    <color name="login_normal">#92C600</color>
+    <color name="verify_press">#8abb02</color>
+    <color name="verify_normal">#92C600</color>
+    <color name="verify_false">#bfb3b3</color>
+    <!-- 不可点击状态 -->
+    <color name="background_theme">#2b2937</color>
+    <color name="text_color">#606366</color>
+    <color name="text_color_click">#241f1f</color>
+    <!-- 赞和评论被点击时，文字颜色变深色一点 -->
+    <color name="text_color_people">#0bb8cd</color>
+    <!-- 回复人和评论人的名字颜色，荧光色 -->
+    <color name="name_color">#898e91</color>
+    <color name="name_color_click">#92C600</color>
+    <color name="forget_press">#39526f</color>
+    <color name="forget_normal">#2a3c50</color>
+    <color name="milkwhite">#f1eeed</color>
+    <color name="discovery_item_press">#E2DCEE</color>
+    <color name="bg_expression_panel">#EDEDED</color>
+    <color name="indicator_page_color">#C9C9C9</color>
+    <color name="indicator_fill_color">#AAAAAA</color>
+    <color name="bg_collapse_text_press">#CCCCCC</color>
+
+</resources>

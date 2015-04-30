@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_campus_circle"
+        android:visibility="gone" >
+
+        <com.myxiaoapp.view.CircleImageView
+            android:id="@+id/my_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/show_pic_1" />
+
+
+        <TextView
+            android:id="@+id/tv_my_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_portrait"
+            android:layout_toRightOf="@id/ci_my_portrait"
+            android:text="知道就知道，不知道就不知道，是智慧也！"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/date"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="今天"
+            android:visibility="visible"
+            android:textSize="@dimen/textSize_large"/>
+        <TextView 
+            android:id="@+id/day"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="10"
+            android:visibility="gone"
+            android:textSize="@dimen/textSize_middle"/>
+       <TextView
+            android:id="@+id/month"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:text="9月"
+            android:visibility="gone"
+            android:textSize="@dimen/textSize_middle"/>"
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/show_pic_4"
+            android:layout_marginRight="8dp"/>
+        <TextView 
+            android:id="@+id/mood_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="你知道我在等你吗？"/>"
+    </LinearLayout>
+
+</LinearLayout>

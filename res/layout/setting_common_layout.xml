@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_setting_switch"
+        android:button="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/checkbox"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setting_title"
+            style="@style/setting_title"
+            android:text="@string/setting_new_message_remain" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/setting_tips"
+            style="@style/setting_tips"
+            android:text="@string/setting_new_message_remain_tips" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

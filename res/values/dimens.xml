@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_horizontal_margin_middle">10dp</dimen>
+    <dimen name="activity_horizontal_margin_large">20dp</dimen>
+    
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="textsize" > 20dp</dimen>
+    <dimen name="textsize_x">40dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    
+    <!-- 登录 -->
+    <dimen name="xiaoyuan_textsize">35sp</dimen>
+    <dimen name="xiaoyuan_top_padding">20dp</dimen>
+    <dimen name="middle_layout_padding">20dp</dimen>
+    <dimen name="username_top_padding">70dp</dimen>
+    <dimen name="divider1_top_padding">15dp</dimen>
+    <dimen name="divider1_bottom_padding">25dp</dimen>
+    <dimen name="divider2_top_padding">15dp</dimen>
+    <dimen name="divider2_bottom_padding">35dp</dimen>
+    <dimen name="forgetpassword_top_padding">10dp</dimen>
+    <dimen name="forgetpassword_bottom_padding">0dp</dimen>
+    <dimen name="divider3_top_padding">25dp</dimen>
+    <dimen name="divider3_bottom_padding">20dp</dimen>
+    <dimen name="go_right_padding">15dp</dimen>
+    
+    <!-- 找回密码 -->
+    <!-- 找回密码流程中，按钮距离左右边框的距离 -->
+    <dimen name="button_left_right_margin">60dp</dimen>
+    <!-- 背景离左右边框的距离 -->
+    <dimen name="background_left_right_margin">30dp</dimen>
+    
+    <!-- 字体 -->
+    <dimen name="textSize_large">20sp</dimen>
+    <dimen name="textSize_middle">16sp</dimen>
+    <dimen name="textSize_small">15sp</dimen>
+    
+    <!-- 输入框 :输入框的高度-->
+    <dimen name="inputsize">30dp</dimen>
+    
+    <!-- 头像的高和宽，如校园圈中发布信息者的圆头像 ，也可用于其他activity的圆头像-->
+    <dimen name="circle_head_height">50dp</dimen>
+    <dimen name="circle_head_width">50dp</dimen>
+</resources>

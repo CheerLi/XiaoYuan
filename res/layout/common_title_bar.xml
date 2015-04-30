@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_back_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2937" >
+
+    <ImageButton
+        android:id="@+id/ibtn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_actionbar_btn"
+        android:contentDescription="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/title_bar_left"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/ibtn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_actionbar_btn"
+        android:contentDescription="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/title_bar_right"
+        android:visibility="invisible" />
+    
+    <TextView
+        android:id="@+id/ibtn_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_actionbar_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFF"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+</RelativeLayout>

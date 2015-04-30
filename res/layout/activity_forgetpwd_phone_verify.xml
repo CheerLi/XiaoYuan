@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/background_left_right_margin"
+    android:background="@color/milkwhite"
+    android:orientation="vertical" >
+<LinearLayout
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:orientation="horizontal">
+		<TextView 
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:text="@string/phonenumber_tip"
+		    android:textColor="@color/text_color"
+		    android:textSize="@dimen/textSize_large"/>
+
+        <EditText
+            android:id="@+id/phonenumber_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputsize"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:inputType="phone" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/forgetpwd_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="@dimen/button_left_right_margin"
+        android:paddingRight="@dimen/button_left_right_margin"
+        android:layout_gravity="center"
+        android:text="@string/forgetpwd_next"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_forget_button"/>
+
+</LinearLayout>

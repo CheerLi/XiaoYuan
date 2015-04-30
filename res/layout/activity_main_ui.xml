@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#181a1e"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_campus"
+            style="@style/main_footbar_button"
+            android:drawableTop="@drawable/tab_campus"
+            android:text="校内"/>
+
+        <RadioButton
+            android:id="@+id/rb_discovery"
+             style="@style/main_footbar_button"
+            android:drawableTop="@drawable/tab_discovery"
+            android:text="发现"/>
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+             style="@style/main_footbar_button"
+            android:drawableTop="@drawable/tab_chat"
+            android:text="聊天"/>
+
+        <RadioButton
+            android:id="@+id/rb_me"
+             style="@style/main_footbar_button"
+            android:drawableTop="@drawable/tab_me"
+            android:text="我" />
+</RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_ui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab_group" />
+
+</RelativeLayout>

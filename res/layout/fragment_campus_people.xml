@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:padding="8dp" >
+    -->
+<!-- 先不要搜索框 -->
+<!-- 
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_search"
+        android:textSize="12sp"
+        android:hint="@string/search"
+        android:inputType="text" />
+ -->
+ <!--  
+    <com.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/people_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <requestFocus />
+    </com.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>
+- -->
+<com.pulltorefresh.library.PullToRefreshListView
+     	xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/people_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+        <requestFocus/>
+    </com.pulltorefresh.library.PullToRefreshListView>

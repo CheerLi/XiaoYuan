@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/background_left_right_margin"
+    android:background="@color/milkwhite"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/phonenumber_tip"
+            android:textSize="@dimen/textSize_large"
+            android:textColor="@color/text_color"/>
+        <TextView 
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textSize_large"
+            android:text="+86 13760****23"
+            android:textColor="@color/text_color"/>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/verifynumber_tip"
+            android:textSize="@dimen/textSize_large"
+            android:textColor="@color/text_color"/>
+	    <EditText 
+	        android:id="@+id/verify_number"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/inputsize"
+	        android:layout_marginLeft="10dp"
+	        android:background="@color/white"/>
+	</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/reget_verify_tip"
+        android:textSize="@dimen/textSize_small"
+        android:textColor="@color/text_color"/>
+    <Button
+        android:id="@+id/resetpwd_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/button_left_right_margin"
+        android:paddingRight="@dimen/button_left_right_margin"
+        android:text="@string/verify_submit"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_forget_button"/>
+        
+</LinearLayout>

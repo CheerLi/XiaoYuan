@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_campus_news_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/milkwhite" >
+
+    <!-- 点击评论出现编辑发送框 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_chat_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <!-- 发送按钮 -->
+
+        <Button
+            android:id="@+id/chat_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/chat_output_button" />
+
+        <!-- 表情按钮 -->
+<!-- 
+        <ImageView
+            android:id="@+id/chat_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/chat_output"
+            android:src="@drawable/ic_launcher" />
+ -->
+        <!-- 输入框 -->
+
+        <EditText
+            android:id="@+id/chat_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/chat_output"
+            android:background="@color/white" />
+    </RelativeLayout>
+    <!-- 正文内容 -->
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_chat_input"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/layout_canpus_news_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 头像 -->
+
+            <com.myxiaoapp.view.CircleImageView
+                android:id="@+id/portrait"
+                android:layout_width="@dimen/circle_head_height"
+                android:layout_height="@dimen/circle_head_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"  />
+
+            <!-- 心情  点赞  评论 -->
+
+            <RelativeLayout
+                android:id="@+id/right_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/portrait"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+				
+        <!--         <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" 
+                    android:textSize="@dimen/textSize_large" />
+ -->                
+                <!-- 下面的paddingTop=5dp，是为了与左边的昵称对齐处于同一水平线 -->
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="5dp" 
+                    android:textColor="@color/text_color" />
+                <TextView
+                    android:id="@+id/mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/textSize_middle" />
+
+               
+				<com.myxiaoapp.view.MyGridView
+                android:id="@+id/campus_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/mood"
+                android:columnWidth="100px"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"                
+                android:verticalSpacing="1dp" 
+                android:stretchMode="columnWidth"  
+                android:numColumns="3"/>
+                <TextView
+                    android:id="@+id/number_of_people_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/campus_comment"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:drawableLeft="@drawable/icon_comment" 
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/number_of_people_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/campus_comment"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_large"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_toLeftOf="@id/number_of_people_comment"
+                    android:drawableLeft="@drawable/icon_like" 
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/people_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/campus_comment"
+                    android:layout_toLeftOf="@id/number_of_people_like"
+                    android:layout_marginTop="@dimen/activity_vertical_margin" 
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color" />
+
+                <ListView
+                    android:id="@+id/comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number_of_people_comment"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

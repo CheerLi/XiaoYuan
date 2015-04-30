@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name">校缘</string>
+    <string name="title_activity_main_ui">MainUIActivity</string>
+    <string name="login_xiaoyuan">校 缘</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_register_school">请选择学校</string>
+    <string name="student_num">学号</string>
+    <string name="student_passwd">密码</string>
+    <string name="verify_tip">验证码</string>
+    <string name="get_verify_tip"><u>看不清？换一张</u></string>
+    <string name="school_verify">校内认证</string>
+    <string name="verify_explain">校内认证原理：校内认证是通过学生的学号和密码，登录该校的教务系统以验证学生的身份。认证后将会导出学生教务系统的课程表。学生的学号和密码仅为认证所用，不会被泄密。</string>
+
+    <!-- MainActivity -->
+    <string name="campus">校内</string>
+    <string name="campus_people">校内的人</string>
+    <string name="discovery">发现</string>
+    <string name="chat">聊天</string>
+    <string name="me">我</string>
+    <string name="display_male_only">只显示男</string>
+    <string name="display_female_only">只显示女</string>
+    <string name="display_all">显示全部</string>
+
+    <!-- Campus -->
+    <string name="refresh_people">换一批</string>
+    <string name="loading">正在奋力加载，请稍等...</string>
+    <string name="action_shield">屏蔽消息</string>
+    <string name="action_note">备注</string>
+    <string name="personal_sign">个性签名：</string>
+    <string name="him_focus">他的关注</string>
+    <string name="him_fans">他的粉丝</string>
+    <string name="my_focus">我的关注</string>
+    <string name="my_fans">我的粉丝</string>
+    <string name="photo_album">相册</string>
+    <string name="campus_circle">深圳大学</string>
+    <string name="focus">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="chat_output_button">发送</string>
+
+    <!-- Discovery -->
+    <string name="my_class_table">我的课表</string>
+    <string name="campus_mood">校园心情</string>
+    <string name="title_activity_details">详细资料</string>
+    <string name="title_activity_campus_news">CampusNewsActivity</string>
+    <string name="title_activity_campus_news_details">CampusNewsActivityDetails</string>
+    <string name="title_activity_register_detail">请填写必要的信息</string>
+    <string name="title_activity_register_verify">输入手机号</string>
+    <string name="title_activity_register_inputverify">输入验证码</string>
+    <string name="title_activity_register_set_password">设置密码</string>
+    <string name="title_activity_register_success">ResgisterSuccessActivity</string>
+    <string name="title_activity_forgetpwd_phonenumber">ForgetPWDPhoneNumberActivity</string>
+    <string name="title_activity_forgetpwd_verify">输入验证码</string>
+    <string name="title_activity_forgetpwd">忘记密码</string>
+    <string name="title_activity_forgetpwd_set_pwd">设置新密码</string>
+    <string name="title_activity_campus_person">Angelababy</string>
+    <!-- Login -->
+    <string name="logo">logo</string>
+    <string name="username">账号</string>
+    <string name="phone_or_studentnumber">手机号/用户名</string>
+    <string name="submit_button">登录</string>
+    <string name="input_password">输入密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="register">新用户注册</string>
+
+    <!-- register_school -->
+    <string name="province">省份:</string>
+    <string name="city">城市:</string>
+    <string name="school">学校:</string>
+    <string name="contract"><a href="*">用户协议</a></string>
+    <string name="nextbtn">下一步</string>
+    <string name="register_school_tips">提示：用户注册成功后学校不能修改！</string>
+
+    <!-- register_detail -->
+    <string name="head">头像:</string>
+    <string name="sex">性别:</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="name">昵称:</string>
+
+    <!-- register_phone_verify -->
+    <string name="zone_phone">+86</string>
+    <string name="phonenumber_input">输入手机号</string>
+    <string name="get_verify">获取验证码</string>
+    <string name="verify_fail_hint">未收到？重新获取</string>
+    <string name="register_next">获取验证码</string>
+    <string name="text_verify">验证码：</string>
+    <string name="verify_submit">确认</string>
+
+    <!-- register_set_password -->
+    <string name="phone">手机:</string>
+    <string name="password">密码:</string>
+    <string name="password_reset">重复密码:</string>
+    <string name="register_complete">校内注册</string>
+    <!-- register_success -->
+    <string name="register_success">注册成功！</string>
+    <string name="start_play">开始体验</string>
+    <string name="start_play_tips">提示：未认证用户仅有浏览权限。</string>
+    <string name="verify_school">校内认证</string>
+    <string name="verify_school_tips">提示：认证成功将获得全部权限并自动导入课表。</string>
+
+    <!-- forgetpwd_phone_verify -->
+    <string name="forgetpwd_actionbar_title">忘记密码</string>
+    <string name="forgetpwd_next">获取验证码</string>
+    <string name="phone_number">手机号：</string>
+
+    <!-- forgetpwd_password_reset -->
+    <string name="resetpwd_actionbar_title">重设密码</string>
+    <string name="phonenumber_tip">手机号:</string>
+    <string name="verifynumber_tip">验证码:</string>
+    <string name="reget_verify_tip">未收到?重新获取</string>
+    <string name="resetpwd_tip">重设密码</string>
+    <string name="new_password">新密码:</string>
+    <string name="new_password_reset">重复密码:</string>
+    <string name="reset_submit">确认</string>
+    <string name="phonenumber">138XXXXXXXX</string>
+    <string name="send_campus_news">发布校园圈</string>
+    <string name="send">发送</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="loading_more">正在加载更多...</string>
+    <string name="finish">完成</string>
+    <string name="external_storage_diable">SD卡不可用</string>
+    <string name="exceed_max_picture">最多选择9张图片</string>
+    <string name="publish_image">发布图片</string>
+    <string name="want_to_say">想说点什么？</string>
+    <string name="ok">确定</string>
+    <string name="current_week">当前周</string>
+    <string name="remark">备注</string>
+
+    <!-- chat -->
+    <string name="new_focus">新的关注</string>
+
+    <!-- Me -->
+    <string name="add_focus">添加关注</string>
+    <string name="function_settings">功能设置</string>
+    <string name="feedback">意见反馈</string>
+    <string name="information">消息</string>
+    <string name="setting_new_message_remain">新消息提醒</string>
+    <string name="setting_chat_message">聊天消息</string>
+    <string name="setting_new_focus">新的关注</string>
+    <string name="setting_voice">声音</string>
+    <string name="setting_shake">振动</string>
+    <string name="setting_campus_circle_update">校园圈更新</string>
+    <string name="setting_privacy">隐私</string>
+    <string name="setting_can_find_me_by_phone">可以通过手机找到我</string>
+    <string name="setting_location_available">位置可见</string>
+    <string name="setting_check_update">检查更新</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="exit">退出登录</string>
+    <string name="close_app">关闭软件</string>
+    <string name="logout">退出登录</string>
+    <string name="send_feedback">发送</string>
+    <string name="search_hint">昵称/手机号</string>
+    <string name="search">搜索</string>
+    <string name="clear">清空</string>
+    <string name="about_us">关于我们</string>
+    <string name="setting_new_message_remain_tips">若关闭，通知提示将不再显示发信人和内容摘要</string>
+    <string name="setting_chat_message_tips">若关闭，将不再接受新消息</string>
+    <string name="setting_new_focus_tips">若关闭，当有新关注的时候将不再提醒</string>
+    <string name="setting_voice_tips">当校缘正在运行时，你可以设置是否需要声音</string>
+    <string name="setting_shake_tips">当校缘正在运行时，你可以设置是否需要振动</string>
+    <string name="setting_close_no_tips">关闭后没有红点</string>
+    <string name="setting_phone_tips">开启后可以通过手机号添加我为好友</string>
+    <string name="setting_location_tips">关闭后，其他用户将不能通过校内的人找到你</string>
+
+    <!-- pull to refresh -->
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="title_activity_select_pictures">图片</string>
+    <string name="title_activity_publish_text">发表文字</string>
+    <string name="title_activity_setting">功能设置</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+
+    <!-- CampusNews -->
+    <string name="reply_people">小王</string>
+    <string name="reply">回复</string>
+    <string name="comment_people">小张</string>
+    <string name="split">:</string>
+    <string name="comment">今天好开心</string>
+    <string name="title_activity_select_pic_group">SelectPicGroupActivity</string>
+    <string name="title_activity_show_image">ShowImageActivity</string>
+    <string name="title_activity_preview_image">PreviewImageActivity</string>
+    <string name="title_activity_publish_image">PublishImageActivity</string>
+    <string name="title_activity_modify_personal_sign">ModifyPersonalSignActivity</string>
+    <string name="title_activity_add_new_friend">AddNewFriendActivity</string>
+    <string name="title_activity_course_table">CourseTableActivity</string>
+
+    <!-- week list -->
+    <string-array name="week_list">
+        <item>第1周</item>
+        <item>第2周</item>
+        <item>第3周</item>
+        <item>第4周</item>
+        <item>第5周</item>
+        <item>第6周</item>
+        <item>第7周</item>
+        <item>第8周</item>
+        <item>第9周</item>
+        <item>第10周</item>
+        <item>第11周</item>
+        <item>第12周</item>
+        <item>第13周</item>
+        <item>第14周</item>
+        <item>第15周</item>
+        <item>第16周</item>
+        <item>第17周</item>
+        <item>第18周</item>
+        <item>第19周</item>
+        <item>第20周</item>
+    </string-array>
+
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_remark">RemarkActivity</string>
+    <string name="title_activity_authenticate">AuthenticateActivity</string>
+    <string name="title_activity_chat_panel">ChatPanelActivity</string>
+    <string name="title_activity_push_demo">PushDemoActivity</string>
+</resources>
